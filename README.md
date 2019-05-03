@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive design is somewhat like a liquid, it will automatically adapt to the user's device irrespective of the device screen size while Adaptive design is built on the use of static breakpoint, and the page won't be adaptive anymore once it's loaded, the work layout is loaded appropriately with the screen size of device. With adaptive, we need to take all the mainstream display size into account and then design the corresponding layout while it's not the case in responsive design.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+A mobile first approach is a very focused approach that begins with designing for the main function of the site, then aims for higher resolutions,often called progressive enhancement while Desktop first  approach means designing for the highest specifications — the best achievable by design- and then going down to smaller resolutions, often called graceful degradation. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+This means making the font size of the element in question to have 62.5% of the root font size. In some browsers, default font size is 16px, giving an element a font size of 62.5% means the element should have `font-size: 10px` .
+
 4. How would you describe preprocessing to someone new to CSS?
 
+In trying to explain CSS preprocessing it would be good to explain CSS preprocessors;  Preprocessors are programs that offer the variables missing in CSS. Preprocessors were created to organize CSS via nested definitions, making CSS codes easier to maintain,they extend CSS with variables, operators, interpolations, functions, mixins, and many other usable assets. Essentially, a preprocessor takes code that's written in the preprocessed language - like SASS and LESS - and converts it into simple CSS code.
+The preprocessor is comprised of a language, the code that you write, and a compiler that converts the code into standard CSS which is easily read and processed by any web browser. Preprocessing is therefore the process of converting codes written in a preprocessed language  into simple CSS code.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Variable declaration is my favorite concept in preprocessing as it provides a single source of truth, one only have one place to make changes instead of running through the entire file. However, the concept of nesting gives me a bit of a headache too much nesting creates problems and waste time when trying to debug.Also, improperly nested codes can create more problem than it solves.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
