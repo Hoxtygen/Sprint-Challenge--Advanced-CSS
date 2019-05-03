@@ -231,10 +231,23 @@ footer {
   display: block;
   width: 100%;
 }
+@keyframes banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  opacity: 0;
+  animation-name: banner;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 @media (max-width: 500px) {
   .home .space-images {
@@ -322,6 +335,11 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+  animation-name: banner;
+  opacity: 0;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
