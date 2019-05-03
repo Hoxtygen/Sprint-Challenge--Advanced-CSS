@@ -356,3 +356,37 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .join-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.home .join-form .form-header {
+  width: 38%;
+}
+.home .join-form .main-form {
+  width: 58%;
+}
+.home .join-form .main-form .single-input input {
+  width: 100%;
+  line-height: 40px;
+  padding: 0 10px;
+  border: 1px thin #024457;
+  font-size: 1rem;
+  color: #495057;
+  background-clip: padding-box;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.home .join-form .main-form .btn-primary {
+  line-height: 40px;
+  background: hsl(120, 61%, 38%);
+  width: 100%;
+  color: hsl(207, 37%, 89%);
+  outline: none;
+  border: none;
+  border-radius: 0;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
