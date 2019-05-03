@@ -188,6 +188,10 @@ nav ul li a {
   font-weight: bold;
   font-size: 1.3rem;
 }
+nav ul li a:hover {
+  color: #F6F6F6;
+  background: #454A59;
+}
 @media (max-width: 500px) {
   nav ul li a {
     margin-right: 1.2em;

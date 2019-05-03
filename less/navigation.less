@@ -6,7 +6,7 @@ nav   {
     text-align: center;
 
     ul  {
-        
+
     .makeUl(flex, 0, 0, none);
 
       li a  {
@@ -16,6 +16,11 @@ nav   {
         color: @nav-font;
         font-weight: bold;
         font-size: 1.3rem;
+
+        &:hover     {
+            color: @footer-background;
+            background:  @nav-font;;
+        }
 
         @media @phone   {
             margin-right: 1.2em;
