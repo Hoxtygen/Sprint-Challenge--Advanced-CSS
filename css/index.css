@@ -1,0 +1,392 @@
+.makeHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+:root {
+  font-size: 70%;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  padding: 0.6rem;
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li a {
+  margin-right: 2em;
+  text-decoration: none;
+  padding: 1.2rem;
+  color: #454A59;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+nav ul li a:hover {
+  color: #F6F6F6;
+  background: #454A59;
+}
+@media (max-width: 500px) {
+  nav ul li a {
+    margin-right: 1.2em;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .intro h2 {
+    font-size: 3.7rem;
+    font-weight: 700;
+    padding: 30px;
+  }
+}
+.home .intro p {
+  padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro p {
+    padding: 0 30px;
+  }
+}
+.home .intro .header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+}
+.home .intro .header-image img {
+  display: block;
+  width: 100%;
+}
+@keyframes banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  opacity: 0;
+  animation-name: banner;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    display: none;
+  }
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+.home .visit-planets {
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets h3 {
+    font-size: 3.3rem;
+    font-weight: 700;
+  }
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text h3 {
+    font-size: 3.3rem;
+    font-weight: 700;
+  }
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 120px;
+  background-color: #22283A;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1em;
+  color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #fff;
+  color: #22283A;
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+  animation-name: banner;
+  opacity: 0;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.home .join-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.home .join-form .form-header {
+  width: 38%;
+}
+.home .join-form .main-form {
+  width: 58%;
+}
+.home .join-form .main-form .single-input input {
+  width: 100%;
+  line-height: 40px;
+  padding: 0 10px;
+  border: 1px thin #024457;
+  font-size: 1rem;
+  color: #495057;
+  background-clip: padding-box;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.home .join-form .main-form .btn-primary {
+  line-height: 40px;
+  background: hsl(120, 61%, 38%);
+  width: 100%;
+  color: hsl(207, 37%, 89%);
+  outline: none;
+  border: none;
+  border-radius: 0;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

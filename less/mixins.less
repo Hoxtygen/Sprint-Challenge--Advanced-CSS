@@ -1,1 +1,30 @@
 // Mixins Here
+
+//  buttons
+.makeButtons(@width, @bgColor, @borderRadius, @fontSize, @textAlign, @padding, @color, @cursor) {
+    width: @width;
+    background-color: @bgColor;
+    border-radius: @borderRadius;
+    font-size: @fontSize;
+    text-align: @textAlign;
+    padding: @padding;
+    color: @color;
+    cursor: @cursor;
+} 
+
+//  ul
+.makeUl(@display, @margin, @padding, @listStyle)   {
+    display: @display;
+    margin: @margin;
+    padding: @padding;
+    list-style: @listStyle;
+}
+
+//header
+
+.makeHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: @footer-background;
+}
